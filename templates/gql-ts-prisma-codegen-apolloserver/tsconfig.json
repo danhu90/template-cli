@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "target": "ES2017",
+    "module": "CommonJS",
+    "lib": ["esnext"],
+    "outDir": "./dist",
+    "preserveConstEnums": true,
+    "removeComments": true,
+    "allowJs": false,
+    "strict": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "noImplicitThis": false,
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "baseUrl": "./",
+    "paths": {
+      "@src/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "coverages"],
+  "include": ["src", "__tests__"]
+}
