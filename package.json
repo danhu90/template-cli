@@ -1,7 +1,7 @@
 {
-  "name": "work-template-cli",
-  "version": "1.0.1",
-  "description": "Template cli",
+  "name": "@danhu90/work-template-cli",
+  "version": "1.0.2",
+  "description": "A CLI to bootstrap my projects",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -12,6 +12,7 @@
     "url": "https://github.com/danhu90/template-cli.git"
   },
   "keywords": [
+    "Cli",
     "GraphQL",
     "TypeScript",
     "Prisma",
@@ -19,7 +20,11 @@
     "Node"
   ],
   "bin": {
+    "@danhu90/template-cli": "./index.js",
     "template-cli": "./index.js"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "author": "Daniel Huertas Ariza",
   "license": "ISC",
