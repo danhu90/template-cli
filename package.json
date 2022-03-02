@@ -7,6 +7,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danhu90/template-cli.git"
+  },
+  "keywords": [
+    "GraphQL",
+    "TypeScript",
+    "Prisma",
+    "Codegen",
+    "Node"
+  ],
   "bin": {
     "template-cli": "./index.js"
   },
