@@ -1,0 +1,31 @@
+service: lambda-serverless-ts
+frameworkVersion: '3'
+provider:
+  name: aws
+  runtime: nodejs14.x
+  region: eu-west-1
+  stage: dev
+  tracing:
+    apiGateway: true
+  iamRoleStatements:
+    - Effect: Allow # XRay permissions (required)
+      Action:
+        - "xray:PutTraceSegments"
+        - "xray:PutTelemetryRecords"
+      Resource:
+        #- ARN DynamoDB
+        - "*"
+functions:
+  lambdaFunction:
+    # This is formatted as <FILENAME>.<HANDLER>
+    handler: src/index.handler
+    events:
+      - httpApi:
+          path: /api
+          method: get
+
+# Serverless plugins
+plugins:
+  - serverless-plugin-typescript
+  - serverless-plugin-tracing
+  - serverless-offline
