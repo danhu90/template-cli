@@ -1,6 +1,6 @@
 {
   "name": "@danhu90/work-template-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A CLI to bootstrap my projects",
   "main": "index.js",
   "type": "module",
@@ -9,8 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danhu90/template-cli.git"
+    "url": "git+https://github.com/danhu90/work-template-cli.git"
   },
+  "bugs": {
+    "url": "https://github.com/danhu90/work-template-cli/issues"
+  },
+  "homepage": "https://github.com/danhu90/work-template-cli#readme",
   "keywords": [
     "Cli",
     "GraphQL",
